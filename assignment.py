@@ -126,3 +126,18 @@ print("(L)oad saved game")
 print("(Q)uit")
 print("------------------")
 choice=input("Your choice?")
+
+if choice == "n":
+    name=input("Greetings, miner! What is your name?")
+    print(f"Pleased to meet you, {name}. Welcome to Sundrop Town!")
+    print("DAY 1")
+    print("----- Sundrop Town -----")
+    print("(B)uy stuff")
+    print("See Player (I)nformation")
+    print("See Mine (M)ap")
+    print("(E)nter mine")
+    print("Sa(V)e game")
+    print("(Q)uit to main menu")
+    print("------------------------")
+    day1=input("Your choice?")
+    if day1=="L":
