@@ -34,3 +34,11 @@ def read_map(filename):
         if len(r) < maxw:
             r.extend([' '] * (maxw - len(r)))
     return grid
+
+def find_tile(grid, tile): 
+    #basically finds a certain character and gives me coords
+    for y, row in enumerate(grid):
+        for x, ch in enumerate(row):
+            if ch == tile:
+                return (x, y)
+    return None
